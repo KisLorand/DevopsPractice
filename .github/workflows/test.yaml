@@ -2,7 +2,7 @@ name: Test node app
 
 on:
   push:
-    branch: ["test", "dev"]
+    branch: ["test", "main"]
 
 env:
   NODE_VERSION: '22'
@@ -10,6 +10,7 @@ env:
 jobs:
   test:
     strategy:
+      runs-on: [ubuntu-latest]
       matrix:
         node-version: ["22", "20"]
     steps:
