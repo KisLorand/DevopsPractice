@@ -9,8 +9,8 @@ env:
 
 jobs:
   test:
+    runs-on: [ubuntu-latest]
     strategy:
-      runs-on: [ubuntu-latest]
       matrix:
         node-version: ["22", "20"]
     steps:
