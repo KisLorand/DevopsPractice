@@ -2,9 +2,7 @@ name: Test node app
 
 on:
   push:
-    branch: ["test"]
-  push:
-    branch: ["dev"]
+    branch: ["test", "dev"]
 
 env:
   NODE_VERSION: '22'
